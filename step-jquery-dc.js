@@ -83,7 +83,6 @@ Step.prototype = {
         stepHtml = "\<li class=\"" + classSype + "\"\>" + stepHtml + "\</a\>";
         this.htmlCode = stepHtml;
     }
-
 }
 
 
