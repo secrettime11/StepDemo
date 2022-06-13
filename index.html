@@ -11,18 +11,19 @@
 
 <body>
     <div class="step_context test"></div>
-    <input type="text" value="2" id="currentStepVal" /> <button
-        onclick="StepTool.drawStep(jQuery('#currentStepVal').val(),stepListJson);" type="button">步驟</button>
+    <br>
+    <!-- <input type="text" value="2" id="currentStepVal" /> <button
+        onclick="StepTool.drawStep(jQuery('#currentStepVal').val(),stepListJson);" type="button">步驟</button> -->
 </body>
 
 </html>
 <script>
     var stepListJson = [
-        { StepNum: 1, StepText: "2022-06-13" },
-        { StepNum: 2, StepText: "2022-06-14" },
-        { StepNum: 3, StepText: "2022-06-15" },
-        { StepNum: 4, StepText: "2022-06-16" },
-        { StepNum: 5, StepText: "2022-06-17" },
+        { StepNum: 1, StepText: "2022-06-13" + "<br>" + "進度A" },
+        { StepNum: 2, StepText: "2022-06-14" + "<br>" + "進度B" },
+        { StepNum: 3, StepText: "2022-06-15" + "<br>" + "進度C" },
+        { StepNum: 4, StepText: "2022-06-16" + "<br>" + "進度D" },
+        { StepNum: 5, StepText: "2022-06-17" + "<br>" + "進度F" },
     ];
 
     var currentStep = 2;
