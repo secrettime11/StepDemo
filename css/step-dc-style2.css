@@ -1,0 +1,99 @@
+div.step_context {
+    float: left;
+    width: 100%;
+    margin: 15px;
+}
+
+.step_context ul {
+    height: 70px;
+    width: auto;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+.step_context li {
+    background-image: url("../image/step2.png");
+    background-repeat: no-repeat;
+    border: none;
+    height: 37px;
+    width: 80px;
+    float: left;
+    list-style: none;
+    line-height: 37px;
+    position: relative;
+}
+
+.step_context li span {
+    width: 35px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 35px;
+    line-height: 25px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.step_context li a {
+    border: none;
+    height: 37px;
+    width: 80px;
+    float: left;
+    color: #003300;
+    top: 35px;
+    text-decoration: none;
+    font-size: 12px;
+    list-style: none;
+    text-align: center;
+    position: absolute;
+}
+
+li.firstFinshStep {
+    background-position: 0px -97px;
+}
+
+
+li.firstFinshStep_curr1 {
+    background-position: 0px -287px;
+}
+
+
+li.finshStep {
+    background-position: 0px -235px;
+}
+
+
+li.coressStep {
+    background-position: 0px -47px;
+
+}
+
+
+li.loadStep {
+    background-position: 0px -1px;
+
+}
+
+
+li.loadStep span {
+    color: #268226;
+}
+
+li.finshlast {
+    background-position: 0px -144px;
+
+}
+
+
+li.last {
+    background-position: 0px -185px;
+}
+
+
+li.last span {
+    color: #268226;
+}

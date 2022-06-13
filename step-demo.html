@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" charset="utf-8" />
+    <title>test</title>
+    <!--<link rel="stylesheet" href="css/step-dc-style1.css" />-->
+    <link rel="stylesheet" href="css/step-dc-style2.css" />
+    <script type="text/javascript" src="./step-jquery-dc.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="step_context test"></div>
+    <input type="text" value="2" id="currentStepVal" /> <button
+        onclick="StepTool.drawStep(jQuery('#currentStepVal').val(),stepListJson);" type="button">步驟</button>
+</body>
+
+</html>
+<script>
+    var stepListJson = [
+        { StepNum: 1, StepText: "2022-06-13" },
+        { StepNum: 2, StepText: "2022-06-14" },
+        { StepNum: 3, StepText: "2022-06-15" },
+        { StepNum: 4, StepText: "2022-06-16" },
+        { StepNum: 5, StepText: "2022-06-17" },
+    ];
+
+    var currentStep = 2;
+    var StepTool = new Step_Tool_dc("test", "mycall");
+    StepTool.drawStep(currentStep, stepListJson);
+    function mycall(restult) {
+        StepTool.drawStep(result.value, stepListJson);
+    }
+</script>
